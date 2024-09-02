@@ -1,0 +1,28 @@
+@baseUrl = https://8080-marcoweb-correcaotarefa-awujf9hf4c8.ws-us115.gitpod.io
+
+###
+GET {{baseUrl}}/tarefas
+
+###
+POST {{baseUrl}}/tarefas
+Content-Type: application/json
+
+{
+    "descricao": "Criar Formulário",
+    "concluido": false
+}
+
+###
+GET {{baseUrl}}/tarefas/4
+
+###
+PUT {{baseUrl}}/tarefas/1
+Content-Type: application/json
+
+{
+    "descricao": "Testando Alteração",
+    "concluido": false
+}
+
+###
+DELETE {{baseUrl}}/tarefas/1
